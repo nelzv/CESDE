@@ -5,14 +5,14 @@ public class App {
         ///DEFINICIONES 
         final int PIN_SECRETO = 73742;
         ///PROCESOS,,
-        System.out.println("Hola, bienvenido a nuestro servicio de autenticación de usuarios CESDE");
+        System.out.println("Hola, bienvenido a nuestro servicio de autenticación de usuarios banco CESDE");
         System.out.println("Por favor ingrese su PIN");
         Scanner leer = new Scanner(System.in);
-        int PIN = leer.nextInt();
-        if (PIN == PIN_SECRETO) {
-            System.out.println("Su PIN es correcto");
+        int pinInput = leer.nextInt();
+        if (pinInput == PIN_SECRETO) {
+            System.out.println("Bienvenido a su cuenta bancaria");
         } else {
-            System.out.println("Su PIN es incorrecto");
+            System.out.println("PIN incorrecto. Por seguridad el sistema se cerrará.");
         }
         leer.close();
     }
