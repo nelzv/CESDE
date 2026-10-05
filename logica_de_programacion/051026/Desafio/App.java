@@ -9,11 +9,10 @@ public class App {
         System.out.println("Por favor ingrese su PIN");
         Scanner leer = new Scanner(System.in);
         int PIN = leer.nextInt();
-        leer.close();
-        if (PIN.equals(PIN_SECRETO)) {
-            System.out.println("El PIN es correcto");
-        
-            } else { System.out.println("El PIN es incorrecto, Por seguridad, nuestro sistema se cerrará."); }
-            
+        if (PIN == PIN_SECRETO) {
+            System.out.println("Su PIN es correcto");
+        } else {
+            System.out.println("Su PIN es incorrecto");
         }
+        leer.close();
     }
